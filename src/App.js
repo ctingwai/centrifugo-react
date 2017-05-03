@@ -6,7 +6,7 @@ import jsSHA from 'jssha';
 
 const CONFIG = {
     url: 'https://centrifugo.herokuapp.com',
-    user: 'whatever user id',
+    user: 'whatever user id 2',
     secret: 'secret'
 };
 
@@ -150,7 +150,7 @@ class App extends Component {
             if (pingInterval !== null) {
                 clearInterval(pingInterval);
             }
-            this.addMessage('disconnected from Centrifuge');
+            _this.addMessage('disconnected from Centrifuge');
         });
         this.centrifuge.connect();
     }
